@@ -1,0 +1,70 @@
+{
+    "extra_config": {
+      "github_com/devopsfaith/krakend-cors": {
+        "allow_origins": [
+          "*",
+          "https://crispy-adventure-7p6x5gvvw45hxvgx-8080.app.github.dev"
+        ],
+        "allow_methods": [
+          "GET",
+          "HEAD",
+          "POST",
+          "PUT",
+          "DELETE",
+          "PATCH",
+          "OPTIONS"
+        ],
+        "allow_headers": [
+          "Accept",
+          "Accept-Encoding",
+          "Accept-Language",
+          "App-Version",
+          "Authorization",
+          "Cache-Control",
+          "Content-Length",
+          "Content-Type",
+          "Device-Name",
+          "Origin",
+          "User-Agent",
+          "X-Real-IP",
+          "X-Forwarded-For",
+          "X-Forwarded-Host",
+          "X-Forwarded-Port",
+          "X-Forwarded-Proto",
+          "X-Api-Key",
+          "X-Auth-Token",
+          "X-Requested-With",
+          "X-AOP-Brand",
+          "X-AOP-Device-Id",
+          "X-AOP-Device-Name",
+          "X-AOP-IP-Address",
+          "X-AOP-MAC-Address",
+          "X-AOP-Manufacturer",
+          "X-AOP-Model",
+          "X-AOP-System-Name",
+          "X-AOP-System-Version",
+          "X-AOP-Unique-Id"
+        ],
+        "expose_headers": [
+          "Content-Length",
+          "Content-Type",
+          "Content-Disposition",
+          "X-Content-Filename"
+        ]
+      },
+      "github_com/devopsfaith/krakend-httpsecure": {
+        "sts_seconds": 300,
+        "sts_include_subdomains": true,
+        "frame_deny": true,
+        "content_type_nosniff": true,
+        "browser_xss_filter": true,
+        "content_security_policy": "script-src 'self' 'unsafe-eval' 'unsafe-inline';",
+        "strict_transport_security": "max-age=31536000; includeSubDomains;"
+      },
+      "security/http": {
+        "ssl_proxy_headers": {
+          "X-Frame-Options": "DENY"
+        }
+      }
+    }
+  }

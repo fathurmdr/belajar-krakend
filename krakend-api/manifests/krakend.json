@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "timeout": "120000ms",
+    "output_encoding": "json",
+    "name": "API Gateway",
+    "port": 8080,
+    "extra_config": {{ marshal .service.extra_config }},
+    "endpoints": [
+        {{ template "main.tmpl" }},
+        {{ template "admin.tmpl" }}
+    ]
+}

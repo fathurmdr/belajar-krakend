@@ -13,7 +13,127 @@
             "encoding": "no-op",
             "url_pattern": "/",
             "host": [
-                "http://localhost:4000"
+                "http://localhost:4001"
+            ]
+        }
+    ]
+},
+{
+    "endpoint": "/",
+    "method": "POST",
+    "output_encoding": "no-op",
+    "querystring_params": [
+        "*"
+    ],
+    "headers_to_pass": [
+        "*"
+    ],
+    "backend": [
+        {
+            "encoding": "no-op",
+            "url_pattern": "/",
+            "host": [
+                "http://localhost:4001"
+            ]
+        }
+    ]
+},
+{
+    "endpoint": "/favicon.ico",
+    "method": "GET",
+    "output_encoding": "no-op",
+    "querystring_params": [
+        "*"
+    ],
+    "headers_to_pass": [
+        "*"
+    ],
+    "backend": [
+        {
+            "encoding": "no-op",
+            "url_pattern": "/favicon.ico",
+            "host": [
+                "http://localhost:4001"
+            ]
+        }
+    ]
+},
+{
+    "endpoint": "/__next/{param1}",
+    "method": "GET",
+    "output_encoding": "no-op",
+    "querystring_params": [
+        "*"
+    ],
+    "headers_to_pass": [
+        "*"
+    ],
+    "backend": [
+        {
+            "encoding": "no-op",
+            "url_pattern": "/__next/{param1}",
+            "host": [
+                "http://localhost:4001"
+            ]
+        }
+    ]
+},
+{
+    "endpoint": "/__next/{param1}/{param2}",
+    "method": "GET",
+    "output_encoding": "no-op",
+    "querystring_params": [
+        "*"
+    ],
+    "headers_to_pass": [
+        "*"
+    ],
+    "backend": [
+        {
+            "encoding": "no-op",
+            "url_pattern": "/__next/{param1}/{param2}",
+            "host": [
+                "http://localhost:4001"
+            ]
+        }
+    ]
+},
+{
+    "endpoint": "/__next/{param1}/{param2}/{param3}",
+    "method": "GET",
+    "output_encoding": "no-op",
+    "querystring_params": [
+        "*"
+    ],
+    "headers_to_pass": [
+        "*"
+    ],
+    "backend": [
+        {
+            "encoding": "no-op",
+            "url_pattern": "/__next/{param1}/{param2}/{param3}",
+            "host": [
+                "http://localhost:4001"
+            ]
+        }
+    ]
+},
+{
+    "endpoint": "/__next/{param1}/{param2}/{param3}/{param4}",
+    "method": "GET",
+    "output_encoding": "no-op",
+    "querystring_params": [
+        "*"
+    ],
+    "headers_to_pass": [
+        "*"
+    ],
+    "backend": [
+        {
+            "encoding": "no-op",
+            "url_pattern": "/__next/{param1}/{param2}/{param3}/{param4}",
+            "host": [
+                "http://localhost:4001"
             ]
         }
     ]

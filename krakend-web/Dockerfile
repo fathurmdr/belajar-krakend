@@ -1,6 +1,6 @@
 FROM devopsfaith/krakend:2.7
 
-ENV KRAKEND_PORT=4041
+ENV KRAKEND_PORT=4040
 
 COPY ./manifests /etc/krakend
 

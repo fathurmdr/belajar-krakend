@@ -2,7 +2,8 @@ module.exports = {
   apps: [
     {
       name: "krakend-api",
-      script: "krakend run -c manifests/krakend.json",
+      script: "krakend",
+      args: "run -c manifests/krakend.json",
       env: {
         KRAKEND_PORT: 4041,
         FC_ENABLE: 1,

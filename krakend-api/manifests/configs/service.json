@@ -1,7 +1,7 @@
 {
   "extra_config": {
     "security/cors": {
-      "allow_origins": ["http://frprojects.site"],
+      "allow_origins": ["http://nginx-web.frprojects.site"],
       "max_age": "12h",
       "allow_methods": [
         "GET",

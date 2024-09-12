@@ -1,7 +1,8 @@
 {
   "extra_config": {
-    "github_com/devopsfaith/krakend-cors": {
+    "security/cors": {
       "allow_origins": ["*"],
+      "max_age": "12h",
       "allow_methods": [
         "GET",
         "HEAD",
@@ -49,19 +50,11 @@
         "X-Content-Filename"
       ]
     },
-    "github_com/devopsfaith/krakend-httpsecure": {
-      "sts_seconds": 300,
+    "security/http": {
+      "sts_seconds": "31536000",
       "sts_include_subdomains": true,
       "frame_deny": true,
-      "content_type_nosniff": true,
-      "browser_xss_filter": true,
-      "content_security_policy": "script-src 'self' 'unsafe-eval' 'unsafe-inline';",
-      "strict_transport_security": "max-age=31536000; includeSubDomains;"
-    },
-    "security/http": {
-      "ssl_proxy_headers": {
-        "X-Frame-Options": "DENY"
-      }
+      "browser_xss_filter": true
     }
   }
 }
